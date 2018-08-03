@@ -1,6 +1,5 @@
 from setuptools import setup
 
-
 setup(
     name='moodle',
     version='0.1',
