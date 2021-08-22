@@ -21,13 +21,12 @@ def formatMoodlePostBody(src, dpth=0):
 class MoodleError(Exception):
     """Rasied when the Moodle endpoint returns an error to the client."""
 
-class MoodleClient(object):
+class MoodleClient:
     """
     Docstring for MoodleClient
     Using the REST protocol.
     """
     def __init__(self, token, wwwroot):
-        super(MoodleClient, self).__init__()
         self.token          = token
         self.wwwroot        = wwwroot
         self.protocol       = 'rest'
